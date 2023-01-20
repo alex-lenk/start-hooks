@@ -1,12 +1,12 @@
-import Collapse from "../components/common/collapse"
-import React from "react"
-import HOCExample from "../components/examples/hoc/hocExample"
-import CardWrapper from "../components/common/Card"
-import HocExercise from "../components/exercises/hocExercise"
-import BlockQuoteWrapper from "../components/common/blockQuote"
-import Title from "../components/common/typografy/title"
-import Subtitle from "../components/common/typografy/subtitle"
-import Divider from "../components/common/divider"
+import Collapse from "../components/common/collapse";
+import React from "react";
+import HOCExample from "../components/examples/hoc/hocExample";
+import CardWrapper from "../components/common/Card";
+import HocExercise from "../components/exercises/hocExercise";
+import BlockQuoteWrapper from "../components/common/blockQuote";
+import Title from "../components/common/typografy/title";
+import Subtitle from "../components/common/typografy/subtitle";
+import Divider from "../components/common/divider";
 const HOCLayout = () => {
     return (
         <>
@@ -32,7 +32,7 @@ const HOCLayout = () => {
             </Collapse>
             <CardWrapper>
                 <i className="bi bi-lightbulb"></i> add{" "}
-                <code>&quotreact/display-name&quot: &quotoff&quot</code> to
+                <code>&quot;react/display-name&quot;: &quot;off&quot;</code> to
                 EsLint rules
             </CardWrapper>
             <Divider />
@@ -42,6 +42,6 @@ const HOCLayout = () => {
             <Subtitle>Упражнения</Subtitle>
             <HocExercise />
         </>
-    )
-}
-export default HOCLayout
+    );
+};
+export default HOCLayout;

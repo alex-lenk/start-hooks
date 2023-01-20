@@ -1,4 +1,4 @@
-import { professionsObject as professions } from "./professions.api"
+import { professionsObject as professions } from "./professions.api";
 const qualities = {
     tedious: {
         _id: "67rdca3eeb7f6fgeed471198",
@@ -30,7 +30,7 @@ const qualities = {
         name: "Неуверенный",
         color: "dark"
     }
-}
+};
 
 const users = [
     {
@@ -165,25 +165,25 @@ const users = [
         rate: 5,
         bookmark: false
     }
-]
+];
 if (!localStorage.getItem("users")) {
-    localStorage.setItem("users", JSON.stringify(users))
+    localStorage.setItem("users", JSON.stringify(users));
 }
 
 const fetchAll = () =>
     new Promise((resolve) => {
         window.setTimeout(function () {
-            resolve(JSON.parse(localStorage.getItem("users")))
-        }, 2000)
-    })
+            resolve(JSON.parse(localStorage.getItem("users")));
+        }, 2000);
+    });
 const update = (id, data) =>
     new Promise((resolve) => {
-        const users = JSON.parse(localStorage.getItem("users"))
-        const userIndex = users.findIndex((u) => u._id === id)
-        users[userIndex] = { ...users[userIndex], ...data }
-        localStorage.setItem("users", JSON.stringify(users))
-        resolve(users[userIndex])
-    })
+        const users = JSON.parse(localStorage.getItem("users"));
+        const userIndex = users.findIndex((u) => u._id === id);
+        users[userIndex] = { ...users[userIndex], ...data };
+        localStorage.setItem("users", JSON.stringify(users));
+        resolve(users[userIndex]);
+    });
 
 const getById = (id) =>
     new Promise((resolve) => {
@@ -192,11 +192,11 @@ const getById = (id) =>
                 JSON.parse(localStorage.getItem("users")).find(
                     (user) => user._id === id
                 )
-            )
-        }, 1000)
-    })
+            );
+        }, 1000);
+    });
 export default {
     fetchAll,
     getById,
     update
-}
+};

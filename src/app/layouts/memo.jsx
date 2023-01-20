@@ -1,14 +1,14 @@
-import React from "react"
-import CollapseWrapper from "../components/common/collapse"
-import CardWrapper from "../components/common/Card"
-import MemoWithUseCallbackExample from "../components/examples/memo/memoWithUseCallbackExample"
-import { Link } from "react-router-dom"
-import MemoDependencyFunctionExample from "../components/examples/memo/memoDependencyFunctionExample"
-import BlockQuoteWrapper from "../components/common/blockQuote"
-import Title from "../components/common/typografy/title"
-import Divider from "../components/common/divider"
-import Subtitle from "../components/common/typografy/subtitle"
-import SmallTitle from "../components/common/typografy/smallTitle"
+import React from "react";
+import CollapseWrapper from "../components/common/collapse";
+import CardWrapper from "../components/common/Card";
+import MemoWithUseCallbackExample from "../components/examples/memo/memoWithUseCallbackExample";
+import { Link } from "react-router-dom";
+import MemoDependencyFunctionExample from "../components/examples/memo/memoDependencyFunctionExample";
+import BlockQuoteWrapper from "../components/common/blockQuote";
+import Title from "../components/common/typografy/title";
+import Divider from "../components/common/divider";
+import Subtitle from "../components/common/typografy/subtitle";
+import SmallTitle from "../components/common/typografy/smallTitle";
 const MemoExample = () => {
     return (
         <>
@@ -82,7 +82,7 @@ const MemoExample = () => {
                 <MemoDependencyFunctionExample />
             </CardWrapper>
         </>
-    )
-}
+    );
+};
 
-export default MemoExample
+export default MemoExample;

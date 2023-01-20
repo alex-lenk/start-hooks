@@ -1,12 +1,12 @@
-import React from "react"
-import BlockQuote from "../components/common/blockQuote"
-import CardWrapper from "../components/common/Card"
-import CollapseWrapper from "../components/common/collapse"
-import Divider from "../components/common/divider"
-import SmallTitle from "../components/common/typografy/smallTitle"
-import Subtitle from "../components/common/typografy/subtitle"
-import Title from "../components/common/typografy/title"
-import CloneElementExample from "../components/examples/cloneElement/cloneElementExample"
+import React from "react";
+import BlockQuote from "../components/common/blockQuote";
+import CardWrapper from "../components/common/Card";
+import CollapseWrapper from "../components/common/collapse";
+import Divider from "../components/common/divider";
+import SmallTitle from "../components/common/typografy/smallTitle";
+import Subtitle from "../components/common/typografy/subtitle";
+import Title from "../components/common/typografy/title";
+import CloneElementExample from "../components/examples/cloneElement/cloneElementExample";
 const CloneElement = () => {
     return (
         <>
@@ -46,7 +46,7 @@ const CloneElement = () => {
             <Subtitle>Examples</Subtitle>
             <CloneElementExample />
         </>
-    )
-}
+    );
+};
 
-export default CloneElement
+export default CloneElement;

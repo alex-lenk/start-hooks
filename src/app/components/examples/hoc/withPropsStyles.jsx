@@ -1,12 +1,11 @@
-import React from "react"
-import CardWrapper from "../../common/Card"
-
-const withPropsStyles = (Components) => {
-  return (props) => (
+import React from "react";
+import CardWrapper from "../../common/Card";
+const withPropsStyles = (Component) => (props) => {
+  return (
     <CardWrapper>
-      <Components {...props} name="new name"/>
+      <Component {...props} name="new Name" />
     </CardWrapper>
-  )
-}
+  );
+};
 
-export default withPropsStyles
+export default withPropsStyles;

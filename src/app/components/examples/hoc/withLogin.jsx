@@ -1,14 +1,13 @@
-import React from "react"
-import Subtitle from "../../common/typografy/subtitle"
+import React from "react";
+import SmallTitle from "../../common/typografy/smallTitle";
 
-// eslint-disable-next-line react/display-name
-const WithLogin = (Component) => (props) => {
-  const isLogin = localStorage.getItem("auth")
+const withLogin = (Component) => (props) => {
+  const isLogin = localStorage.getItem("auth");
   return (
     <>
-      {isLogin ? <Component {...props}/> : <Subtitle>auth</Subtitle>}
+      {isLogin ? <Component {...props} /> : <SmallTitle>Auth</SmallTitle>}
     </>
-  )
-}
+  );
+};
 
-export default WithLogin
+export default withLogin;

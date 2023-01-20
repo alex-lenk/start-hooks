@@ -1,10 +1,10 @@
-import React from "react"
-import CollapseWrapper from "../components/common/collapse"
-import ComplexCalculateExample from "../components/examples/useMemo/complexCalculate"
-import BlockQuote from "../components/common/blockQuote"
-import Title from "../components/common/typografy/title"
-import Subtitle from "../components/common/typografy/subtitle"
-import Divider from "../components/common/divider"
+import React from "react";
+import CollapseWrapper from "../components/common/collapse";
+import ComplexCalculateExample from "../components/examples/useMemo/complexCalculate";
+import BlockQuote from "../components/common/blockQuote";
+import Title from "../components/common/typografy/title";
+import Subtitle from "../components/common/typografy/subtitle";
+import Divider from "../components/common/divider";
 const UseMemoExample = () => {
     return (
         <>
@@ -23,7 +23,7 @@ const UseMemoExample = () => {
                     <ul>
                         <li>
                             если не вызывалась, то функция вызывается, и
-                            результат её выполнения сохраняется
+                            результат её выполнения сохраняется;
                         </li>
                         <li>
                             если вызывалась, то используется сохранённый
@@ -56,7 +56,7 @@ const UseMemoExample = () => {
             <Subtitle>Examples</Subtitle>
             <ComplexCalculateExample />
         </>
-    )
-}
+    );
+};
 
-export default UseMemoExample
+export default UseMemoExample;

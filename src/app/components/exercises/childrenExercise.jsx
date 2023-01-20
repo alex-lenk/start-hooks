@@ -1,5 +1,5 @@
-import React from "react"
-import CollapseWrapper from "../common/collapse"
+import React from "react";
+import CollapseWrapper from "../common/collapse";
 const ChildrenExercise = () => {
     return (
         <CollapseWrapper title="Упражнение">
@@ -15,11 +15,11 @@ const ChildrenExercise = () => {
             <Component />
             <Component />
         </CollapseWrapper>
-    )
-}
+    );
+};
 
 const Component = () => {
-    return <div>Компонент списка</div>
-}
+    return <div>Компонент списка</div>;
+};
 
-export default ChildrenExercise
+export default ChildrenExercise;

@@ -29,14 +29,14 @@ const qualities = {
         name: "Неуверенный",
         color: "dark"
     }
-}
+};
 const fetchAll = () =>
     new Promise((resolve) => {
         window.setTimeout(function () {
-            resolve(qualities)
-        }, 2000)
-    })
+            resolve(qualities);
+        }, 2000);
+    });
 
 export default {
     fetchAll
-}
+};

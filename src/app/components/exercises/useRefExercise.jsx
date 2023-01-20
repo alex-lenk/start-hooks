@@ -1,5 +1,5 @@
-import React from "react"
-import CollapseWrapper from "../common/collapse"
+import React from "react";
+import CollapseWrapper from "../common/collapse";
 const UseRefExercise = () => {
     return (
         <CollapseWrapper title="Упражнение">
@@ -8,7 +8,7 @@ const UseRefExercise = () => {
                 кнопку, при нажатии которой изменятся следующие свойства:
             </p>
             <ul>
-                <li>Изменится содержимое блока на &quottext&quot</li>
+                <li>Изменится содержимое блока на &quot;text&quot;</li>
                 <li>высота и ширина станут равны 150 и 80 соответственно</li>
             </ul>
             <div
@@ -22,7 +22,7 @@ const UseRefExercise = () => {
                 <small>Блок</small>
             </div>
         </CollapseWrapper>
-    )
-}
+    );
+};
 
-export default UseRefExercise
+export default UseRefExercise;

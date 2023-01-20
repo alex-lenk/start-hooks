@@ -1,13 +1,13 @@
-import React from "react"
-import BlockQuote from "../components/common/blockQuote"
-import CollapseWrapper from "../components/common/collapse"
-import Divider from "../components/common/divider"
-import Subtitle from "../components/common/typografy/subtitle"
-import Title from "../components/common/typografy/title"
-import PrevStateExample from "../components/examples/useRef/prevState"
-import ProgrammableActionsExample from "../components/examples/useRef/programmableActions"
-import RenderCountExample from "../components/examples/useRef/renderCount"
-import UseRefExercise from "../components/exercises/useRefExercise"
+import React from "react";
+import BlockQuote from "../components/common/blockQuote";
+import CollapseWrapper from "../components/common/collapse";
+import Divider from "../components/common/divider";
+import Subtitle from "../components/common/typografy/subtitle";
+import Title from "../components/common/typografy/title";
+import PrevStateExample from "../components/examples/useRef/prevState";
+import ProgrammableActionsExample from "../components/examples/useRef/programmableActions";
+import RenderCountExample from "../components/examples/useRef/renderCount";
+import UseRefExercise from "../components/exercises/useRefExercise";
 const UseRefExample = () => {
     return (
         <>
@@ -40,7 +40,7 @@ const UseRefExample = () => {
                 <UseRefExercise />
             </div>
         </>
-    )
-}
+    );
+};
 
-export default UseRefExample
+export default UseRefExample;

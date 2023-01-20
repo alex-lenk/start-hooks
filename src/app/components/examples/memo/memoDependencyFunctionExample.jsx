@@ -1,5 +1,5 @@
 const MemoDependencyFunctionExample = (props) => {
-    return null
-}
+    return null;
+};
 
-export default MemoDependencyFunctionExample
+export default MemoDependencyFunctionExample;

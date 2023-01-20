@@ -1,11 +1,11 @@
-import Collapse from "../components/common/collapse"
-import React from "react"
-import UseCallBackExample from "../components/examples/useCallback/useCallBackExample.jsx"
-import BlockQuoteWrapper from "../components/common/blockQuote"
-import CardWrapper from "../components/common/Card"
-import Divider from "../components/common/divider"
-import Title from "../components/common/typografy/title"
-import Subtitle from "../components/common/typografy/subtitle"
+import Collapse from "../components/common/collapse";
+import React from "react";
+import UseCallBackExample from "../components/examples/useCallback/useCallBackExample.jsx";
+import BlockQuoteWrapper from "../components/common/blockQuote";
+import CardWrapper from "../components/common/Card";
+import Divider from "../components/common/divider";
+import Title from "../components/common/typografy/title";
+import Subtitle from "../components/common/typografy/subtitle";
 
 const UseCallbackExample = () => {
     return (
@@ -30,13 +30,13 @@ const UseCallbackExample = () => {
             <CardWrapper>
                 <i className="bi bi-lightbulb"></i>{" "}
                 <code>useCallback(fn, deps)</code> ~{" "}
-                <code>useMemo(() =&gt fn, deps)</code>
+                <code>useMemo(() =&gt; fn, deps)</code>
             </CardWrapper>
             <Divider />
             <Subtitle>Examples</Subtitle>
             <UseCallBackExample />
         </>
-    )
-}
+    );
+};
 
-export default UseCallbackExample
+export default UseCallbackExample;
