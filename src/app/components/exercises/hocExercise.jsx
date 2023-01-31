@@ -1,7 +1,48 @@
 import React from "react";
 import CollapseWrapper from "../common/collapse";
+import Divider from "../common/divider";
+import SmallTitle from "../common/typografy/smallTitle";
+import CardWrapper from "../common/Card";
+import PropTypes from "prop-types";
 
+// Simple Component
+const SimpleComponent = ({ onLogin, onLogOut, isAuth }) => {
+  return isAuth ? (
+    <button className="btn btn-secondary" onClick={onLogOut}>
+      Выйти из системы
+    </button>
+  ) : (
+    <button className="btn btn-primary" onClick={onLogin}>
+      Войти
+    </button>
+  );
+};
+
+// HOC Component
+const withAuth = (Component) => (props) => {
+    const handleLogin = () => {
+        localStorage.setItem("auth", "token");
+    };
+    const handleLogout = () => {
+        localStorage.removeItem("auth");
+    };
+    const isAuth = localStorage.getItem("auth");
+
+    return (
+      <CardWrapper>
+          <Component
+            isAuth={isAuth}
+            onLogOut={handleLogout}
+            onLogin={handleLogin}
+            {...props}
+          />
+      </CardWrapper>
+    );
+};
+
+// Component with HOC
 const HocExercise = () => {
+  const SimpleComponentWithAuth = withAuth(SimpleComponent);
     return (
         <CollapseWrapper title="Упражнение">
             <p className="mt-3">
@@ -65,7 +106,7 @@ const HocExercise = () => {
                 компонент <code>ComponentWithHoc</code> следующим образом:
                 <br />
                 <code>
-                    const ComponentWithHoc = withFunctions(SimpleComponent);
+                    const ComponentWithHoc = withFunctions(SimpleComponent)
                 </code>
                 <br />
                 Затем его необходимо просто вывести в шаблон
@@ -76,8 +117,20 @@ const HocExercise = () => {
                 <code>SimpleComponent</code> обновится после перезагрузки
                 страницы
             </p>
+
+            <Divider />
+
+            <SmallTitle>Решение</SmallTitle>
+
+          <SimpleComponentWithAuth />
         </CollapseWrapper>
     );
+};
+
+SimpleComponent.propTypes = {
+  onLogin: PropTypes.func,
+  onLogOut: PropTypes.func,
+  isAuth: PropTypes.string
 };
 
 export default HocExercise;
